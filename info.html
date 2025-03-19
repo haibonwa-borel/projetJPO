@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>info</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<script src="js/swipe-menu.js" async></script>
+</head>
+<body>
+<nav id="menu">
+	<ul>
+		<li><a href="LMK.html">Acueil</a></li>
+		<li><a href="spe.html">Rechercher un sepecialiste</a></li>
+		<li><a href="#second-block">ADMIN</a></li>
+		<li><a href="info.html">A propos</a></li>
+		</ul>
+</nav>
+
+<div id="container">
+	<header id="headers">
+
+		<div id="menu-burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		</div>
+
+		  <div class="slide-container">
+      <div class="custom-slider fade">
+        <div class="slide-index">1 / 3</div>
+        <img class="slide-img" src="images\banner.png">
+        <div class="slide-text" id="typdtext">A PROPOS DE NOUS</div>
+      </div>
+      <div class="custom-slider fade">
+        <div class="slide-index">2 / 3</div>
+        <img class="slide-img" src="images\logo.png">
+        <div class="slide-text" id="typdtext"> meilleur rapport qualité/prix  </div>
+      </div>
+      <div class="custom-slider fade">
+        <div class="slide-index">3 / 3</div>
+        <img class="slide-img" src="images\ca1.jpg">
+        <div class="slide-text" id="typdtext">commander des stock de medicaments</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+     <div class="slide-dot">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+   
+	</header>
+
+	<main id="main-block">
+		<header id="main-title">
+			<h1>Ce site permet un gagne temps a la population vue la perte de temps due aux files d'attente en consultation et en pharmacie</h1>
+			<h2></h2>
+		</header>
+
+			<form id="search" action="med.php">
+
+		<p class="p"> <input type="search" name="search" placeholder="rechercher"> <input type="submit" value="Rechercher "> </p>
+		</form>
+	</main>
+</div>
+
+
+
+
+<div id="second-block">
+		
+		<form method="post" id="contact-form" action="traitement.php">
+			<div class="form-header">
+				<h2>Nous contacter</h2>
+				<p>Pour plus d'informations ou pour une comande, veillez nous contacter.</p>
+			</div>
+			<div class="form-block">
+				<label>Nom et prenom</label>
+				<input type="text" name="name" placeholder="Votre nom" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Numero de telephone</label>
+				<input type="tel" name="phone" placeholder="votre numero" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Object</label>
+				<select name="object" placeholder="Object du message" value="">
+					<option value=""></option>
+					<option value="INFORMATION">PLUS D'INFORMATION</option>
+					<option value="COMMANDE">COMMANDE</option>
+
+
+				</select>
+				
+
+
+			</div>
+			<div class="form-block">
+				<label>Message</label>
+				<textarea name="message" placeholder="Votre message"></textarea>
+			</div>
+			<div class="form-block form-button">
+				<p><input type="button" name="send" value="connexion" onclick="admin()"></p>
+				<p><input type="submit" name="send" value="Envoyer"/></p>
+				<p><h3>By bobo</h3></p>
+
+			</div>
+		</form>
+	</div>
+
+	<footer id="footer">
+		<p id="rights">All rights reserved &copy; HAIBONWA RIBEGA 2024</p>
+	</footer>
+</div>
+</body>
+</html>
+</body>
+</html>

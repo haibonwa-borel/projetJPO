@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<script src="js/swipe-menu.js" async></script>
+</head>
+<body>
+<h1>admin</h1>
+
+
+
+	<div id="second-block">
+		
+		<form method="post" id="contact-form" action="admin.php" enctype="multipart/form-data">
+			<div class="form-header">
+				<h2>MODE ADMIN</h2>
+				<p>inserer un medicament</p>
+			</div>
+			<div class="form-block">
+				<label>nom du medicament</label>
+				<input type="text" name="name" value=""/>
+			</div>
+			<div class="form-block">
+				<label>image</label>
+				<input type="file" name="image" value=""/>
+			</div>
+
+			<div class="form-block">
+				<label>description</label>
+				<input type="text" name="desc" value=""/>
+			</div>
+			<div class="form-block">
+				<label>prix</label>
+				<input type="number" name="prix" value=""/>
+			</div>
+			
+			<div class="form-block form-button">
+				<p><input type="submit" name="send" value="Envoyer"/></p>
+				<p><h3></h3></p>
+
+			</div>
+		</form>
+
+		
+	</div>
+<div id="second-block">
+	<form method="get" id="contact-form" action="admin.php" enctype="multipart/form-data">
+			<div class="form-header">
+				<p>inserer un specialiste</p>
+			</div>
+			<div class="form-block">
+				<label>nom du secialiste</label>
+				<input type="text" name="name" value=""/>
+			</div>
+			<div class="form-block">
+				<label>specialite</label>
+				<input type="text" name="spe" value=""/>
+			</div>
+
+			<div class="form-block">
+				<label>lieu de fonction</label>
+				<select name="hopital" id="hopital" value="">
+					<option value=""></option>
+					<option value="hrak">hrak</option>
+					<option value="chari">chari</option>
+					<option value="la volonte">la volonte</option>
+
+				</select>
+			</div>
+			<div class="form-block">
+				<label>contact</label>
+				<input type="tel" name="contact" value=""/>
+			</div>
+			
+			<div class="form-block form-button">
+				<p><input type="submit" name="send" value="Envoyer"/></p>
+				<p><h3>By bobo</h3></p>
+
+			</div>
+		</form>
+	</div>
+
+
+
+	<footer id="footer">
+		<p id="rights">All rights reserved &copy; HAIBONWA RIBEGA 2024</p>
+	</footer>
+</div>
+
+
+</body>
+</html>

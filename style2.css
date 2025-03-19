@@ -1,0 +1,24 @@
+
+.content-right-product{ 
+max-width:520px; padding:0px; margin:0px 200px 200px 200px; float:right ; border-radius: 20px; position: ;
+ -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important; 
+ box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+}
+.content-right-product:hover { transition: 1s;-webkit-box-shadow: 0 6px 10px 0 green, 0 1px 18px 0 green, 0 3px 5px -1px green !important;  cursor: pointer;}
+.content-right-product img {padding: 10px 10px; border-radius: 20px 15px 0px 0px; }
+.content-right-product-h4{ width:240px; font-size:18px; font-weight:600; color:#000; padding:5px 15px; float:left; text-align:center !important;} 
+.content-right-product-p{width:240px; color:#333; line-height:26px; padding:5px 15px; float:left; text-align:center !important;}
+.content-right-product-amount{width:240px; color:#df001a !important; font-weight:bold; font-size:26px; padding:5px 15px 10px; float:left; text-align:center !important;}
+.cart{ width:140px; float:left; margin-bottom:10px; padding:0px 25px 0px 75px;}
+
+
+
+#typedtext {
+  font-family: 'Waiting for the Sunrise',; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 3px; 
+  font-weight: bold;}
+
+ 
+  }

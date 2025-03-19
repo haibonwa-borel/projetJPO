@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>CENTRE</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<script src="js/swipe-menu.js" async></script>
+</head>
+<body>
+<nav id="menu">
+	<ul>
+		<li><a href="LMK.html">Acueil</a></li>
+		<li><a href="spe.html">Rechercher un sepecialiste</a></li>
+		<li><a href="#second-block">ADMIN</a></li>
+		<li><a href="info.html">A propos</a></li>
+				</ul>
+</nav>
+
+<div id="container">
+	<header id="headers">
+
+		<div id="menu-burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		</div>
+
+		  <div class="slide-container">
+      <div class="custom-slider fade">
+        <div class="slide-index">1 / 3</div>
+        <img class="slide-img" src="images\c1.jpg">
+        <div class="slide-text" id="typdtext">BIENVENUE AU CENTRE DE SANTÉ SAINT PIO</div>
+      </div>
+      <div class="custom-slider fade">
+        <div class="slide-index">2 / 3</div>
+        <img class="slide-img" src="images\c2.jpg">
+        <div class="slide-text" id="typdtext"> </div>
+      </div>
+      <div class="custom-slider fade">
+        <div class="slide-index">3 / 3</div>
+        <img class="slide-img" src="images\c3.jpg">
+        <div class="slide-text" id="typdtext">Un aceuil chaleureux pour les malades</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+     <div class="slide-dot">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+   
+	</header>
+
+	<main id="main-block">
+		<header id="main-title">
+			<h1>CENTRE DE SANTÉ SAINT PIO</h1>
+			<h2> QUARTIER MADAGASCAR, KOUSSERI</h2>
+		</header>
+
+			<form id="search" action="med.php">
+
+		<p class="p"> <input type="search" name="search" placeholder="rechercher"> <input type="submit" value="Rechercher "> </p>
+		</form>
+	</main>
+</div>
+
+   <div class="content-right-product" onclick="rop()">
+
+            	<div class="slideshow-container">
+                	<div class="slide"><img src="images/r7.png" width="520" height="300"></div>
+            	</div>
+
+                 <div class="content-right-product-h4">SPECIALISTE</div>
+                <div class="content-right-product-p">reponse a vos besoins les plus strictes .</div>
+                 </div>
+
+            <div class="content-right-product" onclick="ropp()">
+
+            	<div class="slideshow-container">
+            		<div class="slide"><img src="images/r4.png" width="520" height="300"></div>
+            	</div>
+
+                 <div class="content-right-product-h4">SERVICES</div>
+                <div class="content-right-product-p">De nombres services pour repondre a vos besoins et plus encore.<br>.</div>
+                </div>
+       
+
+
+           <div>
+           	<p style="text-align: center; font-size: 60px; margin: 20px; font-family: Alegreya Sans SC;">Le centre dispose de nombreuses specialités, pour plus d'information veillez nous contacter au 656202312</p>
+           </div>
+
+  <table>
+  	<tr>
+  		<td>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2071.611400530866!2d15.02166735768704!3d12.106419762608262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111bdf90d2d51099%3A0x4d2ce33697d6cc5!2zQ2VudHJlIGRlIFNhbnTDqSBQcml2w6kgbGEgIlZvbG9udMOpICI!5e1!3m2!1sfr!2scm!4v1704975921630!5m2!1sfr!2scm" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+<td><h1 style="font-size: 80px; vertical-align: bottom;" >nous geolocaliser grace á google maps </td>
+</tr>
+</table>
+
+
+<div id="second-block">
+		
+		<form method="post" id="contact-form" action="traitement.php">
+			<div class="form-header">
+				<h2>Nous contacter</h2>
+				<p>Pour plus d'informations ou pour une comande, veillez nous contacter.</p>
+			</div>
+			<div class="form-block">
+				<label>Nom et prenom</label>
+				<input type="text" name="name" placeholder="Votre nom" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Numero de telephone</label>
+				<input type="tel" name="phone" placeholder="votre numero" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Object</label>
+				<select name="object" placeholder="Object du message" value="">
+					<option value=""></option>
+					<option value="INFORMATION">PLUS D'INFORMATION</option>
+					<option value="COMMANDE">COMMANDE</option>
+
+
+				</select>
+				
+
+
+			</div>
+			<div class="form-block">
+				<label>Message</label>
+				<textarea name="message" placeholder="Votre message"></textarea>
+			</div>
+			<div class="form-block form-button">
+				<p><input type="button" name="send" value="connexion" onclick="admin()"></p>
+				<p><input type="submit" name="send" value="Envoyer"/></p>
+				<p><h3>By bobo</h3></p>
+
+			</div>
+		</form>
+	</div>
+
+	<footer id="footer">
+		<p id="rights">All rights reserved &copy; HAIBONWA RIBEGA 2024</p>
+	</footer>
+</div>
+</body>
+</html>
+</body>
+</html>

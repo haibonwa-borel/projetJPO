@@ -1,0 +1,165 @@
+<!DOCTYPE html>  
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="js/swipe-menu.js" async></script>
+</head>
+<body>
+<nav id="menu">
+	<ul>
+		<li><a href="LMK.html">Acueil</a></li>
+			<li><a href="spe.html">Rechercher un sepecialiste</a></li>
+		<li><a href="#second-block">ADMIN</a></li>
+		<li><a href="info.html">A propos</a></li>
+		</ul>
+</nav>
+
+<div id="container">
+	<header id="header">
+		<a href="info.html"><img src="images/logo.png" alt="Logo"/></a>
+
+		<div id="menu-burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</header>
+
+	<main id="main-block">
+		<header id="main-title">
+			<h1>PROJET PHARMACY OF KOUSSERI, DIGITALISATION MEDICALE</h1>
+			<h2> Bienvenue sur ce site qui presente toutes les pharmacies et les hopitaux de kousseri ainsi que leurs stocks de medicaments.</h2>
+		</header>
+			<form id="search" method="get" action="med.php">
+
+		<p class="p"> <input type="search" name="search" placeholder="rechercher"> <input type="submit" value="Rechercher "> </p>
+		</form>
+
+		<div id="item">
+
+		<table border="5-" onclick="cha()">
+		<tr>		
+
+
+			<td>
+				<div class="d1"></div>
+				<div class="container">
+					<div class="d2"></div>
+				</div>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4414550513225!2d15.025280438360683!3d12.08190173381092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111bdf3f4412ade7%3A0x2441391dd2447b52!2sPharmacie%20du%20CHARI!5e0!3m2!1sfr!2scm!4v1702823364692!5m2!1sfr!2scm" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+</td>
+
+
+<td style="width: 100%; vertical-align: sub;">
+<h1>Pharmacie du CHARI</h1>
+<h2>P. O Box No. 205, Quartier SOKOTO, Kousseri</h2>
+</td>
+</tr>
+			</table>
+
+			<p></p>
+
+			<table border="5" onclick="reg()">
+		<tr>		
+
+
+			<td>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20400.556914606957!2d15.032693987295271!3d12.091485001904339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111961dffe64f061%3A0x3401ea1ec6d54108!2sH%C3%94PITAL%20REGIONAL%20ANNEXE%20DE%20KOUSSERI!5e1!3m2!1sfr!2scm!4v1704381097435!5m2!1sfr!2scm" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+</td>
+
+
+<td style="width: 100%; vertical-align: sub;">
+<h1>HÔPITAL REGIONAL ANNEXE DE KOUSSERI</h1>
+<h2>pres du stade municipale, quartier residentiel, Kousséri</h2>
+</td>
+</tr>
+			</table>
+
+			<p></p>
+
+			<table border="5" onclick="cent()">
+		<tr>		
+
+
+			<td>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2071.611400530866!2d15.02166735768704!3d12.106419762608262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111bdf90d2d51099%3A0x4d2ce33697d6cc5!2zQ2VudHJlIGRlIFNhbnTDqSBQcml2w6kgbGEgIlZvbG9udMOpICI!5e1!3m2!1sfr!2scm!4v1704975921630!5m2!1sfr!2scm" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			
+</td>
+
+
+<td style="width: 100%; vertical-align: sub;">
+<h1>Centre de Santé SAINT PIO</h1>
+<h2>quartier MADAGASCAR</h2>
+</td>
+</tr>
+			</table>
+
+	</div>		
+		
+	</main>
+
+	<div id="second-block">
+		
+		<form method="post" id="contact-form" action="traitement.php">
+			<div class="form-header">
+				<h2>BANK OF GOAT</h2>
+				<p>Enregistrement d'un nouvaux clients.</p>
+			</div>
+			<div class="form-block">
+				<label>Nom complet</label>
+				<input type="text" name="name" id="name" placeholder="Votre nom" value=""/>
+			</div>
+			<div class="form-block">
+				<label>prenom</label>
+				<input type="text" name="name" id="name" placeholder="Votre nom" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Numero de telephone
+				ou email</label>
+				<input type="tel" name="phone" id="phone" placeholder="votre numero" value=""/>
+			</div>
+			<div class="form-block">
+			<label> Date de naissance </label>
+				<input type="tel" name="phone" id="phone" placeholder="votre numero" value=""/>
+			</div>
+			<div class="form-block">
+				<label>SEXE</label>
+				<select name="object" id="object" placeholder="Object du message" value="">
+					<option value=""></option>
+					<option value="INFORMATION">M</option>
+					<option value="COMMANDE">F</option>
+					<option value="COMMANDE">Autres(bizzare)</option>
+
+
+				</select>
+				<img src="" i>
+
+
+			</div>
+			<div class="form-block">
+				<label>profession et revenues mensuels</label>
+				<textarea name="message" id="message" placeholder="Votre message"></textarea>
+			</div>
+			<div class="form-block form-button">
+				<p><input type="button" name="send" value="S'inscrire" onclick="admin()"></p>
+				<p><h3></h3></p>
+
+			</div>
+		</form>
+	</div>
+
+	<footer id="footer">
+		<p id="rights">All rights reserved &copy; HAIBONWA RIBEGA 2024</p>
+	</footer>
+</div>
+</body>
+</html>
